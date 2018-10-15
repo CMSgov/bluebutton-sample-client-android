@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp" >
+        
+            <TextView
+                android:id="@+id/label_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/enter_label" />
+        
+            <EditText
+                android:id="@+id/label_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enter_label" >
+        
+                <requestFocus />
+            </EditText>
+        
+        
+            <TextView
+                android:id="@+id/description_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+        	android:text="@string/enter_desc" />
+        
+            <EditText
+                android:id="@+id/description_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enter_desc"
+                android:inputType="textMultiLine"
+                android:minLines="5" >
+            </EditText>
+        
+        
+            <TextView
+                android:id="@+id/testtype_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+        	android:text="@string/enter_testtype" />
+        
+            <EditText
+                android:id="@+id/testtype_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+        	android:hint="@string/enter_testtype" />
+        
+        
+        
+            <TextView
+                android:id="@+id/clid_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+        	android:text="@string/enter_clid" />
+        
+            <EditText
+                android:id="@+id/clid_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+        	android:hint="@string/enter_clid" />
+        
+        
+            <TextView
+                android:id="@+id/clsec_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+        	android:text="@string/enter_clsec" />
+        
+            <EditText
+                android:id="@+id/clsec_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+        	android:hint="@string/enter_clsec" />
+        
+        
+            <TextView
+                android:id="@+id/reduri_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+        	android:text="@string/enter_reduri" />
+        
+            <EditText
+                android:id="@+id/reduri_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+        	android:hint="@string/enter_reduri" />
+
+            <TextView
+                android:id="@+id/authuri_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+        	android:text="@string/enter_authuri" />
+        
+            <EditText
+                android:id="@+id/authuri_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+		android:hint="@string/enter_authuri" />
+
+            <TextView
+                android:id="@+id/tokuri_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+        	android:text="@string/enter_tokuri" />
+        
+            <EditText
+                android:id="@+id/tokuri_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+        	android:hint="@string/enter_tokuri" />
+        
+            <TextView
+                android:id="@+id/authscope_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+        	android:text="@string/enter_authscope" />
+        
+            <EditText
+                android:id="@+id/authscope_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+        	android:hint="@string/enter_authscope" />
+        
+        
+            <TextView
+                android:id="@+id/discuri_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+        	android:text="@string/enter_discuri" />
+        
+            <EditText
+                android:id="@+id/discuri_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+        	android:hint="@string/enter_discuri" />
+        
+            <TextView
+                android:id="@+id/regenduri_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+        	android:text="@string/enter_regenduri" />
+        
+            <EditText
+                android:id="@+id/regenduri_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+        	android:hint="@string/enter_regenduri" />
+        
+            <TextView
+                android:id="@+id/usrinfouri_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+        	android:text="@string/enter_usrinfouri" />
+        
+            <EditText
+                android:id="@+id/usrinfouri_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+        	android:hint="@string/enter_usrinfouri" />
+        
+            <TextView
+                android:id="@+id/httpsreq_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+        	android:text="@string/enter_httpsreq" />
+        
+            <EditText
+                android:id="@+id/httpsreq_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+        	android:hint="@string/enter_httpsreq" />
+        
+        
+        
+            <Button
+                android:id="@+id/add_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/add_record" />
+        
+        </LinearLayout>
+
+    </ScrollView>
+ </LinearLayout>
+
