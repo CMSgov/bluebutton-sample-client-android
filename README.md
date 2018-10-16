@@ -3,11 +3,11 @@ Blue Button Sample Client Application - Android Version
 
 ## Introduction
 
-This client demonstrates authenticating to the [Blue Button API](https://bluebutton.cms.gov/). It currently does not include FHIR API calls and is being used for authentication testing only.  It demonstrates the [RFC 8252 - OAuth 2.0 for Native Apps](https://tools.ietf.org/html/rfc8252) Server Side web application flow utilizing the [PKCE](https://tools.ietf.org/html/rfc7636) extension and a custom URI scheme redirect.
+This client demonstrates authenticating to the [Blue Button API](https://bluebutton.cms.gov/). It currently does not include FHIR API calls and is being used for authentication testing only.  It demonstrates the [RFC 8252 - OAuth 2.0 for Native Apps](https://tools.ietf.org/html/rfc8252) authentication flow utilizing the [PKCE](https://tools.ietf.org/html/rfc7636) extension and a custom URI scheme redirect.
 
 This client is built using the [AppAuth SDK](https://appauth.io/) and more specifically the [AppAuth for Android client SDK](https://github.com/openid/AppAuth-Android). 
 
-A frontend client configuration SQLite database was inspired by blog examples from [AnujAroshA / Android-SQLite](https://github.com/AnujAroshA/Android-SQLite).
+A frontend client configuration SQLite database was inspired by blog examples from [AnujAroshA / Android-SQLite](https://github.com/AnujAroshA/Android-SQLite). This enables creating a list of different configurations for testing.
 
 [Android Studio](https://developer.android.com/studio/) was used for a development IDE.
 
@@ -27,25 +27,23 @@ Please follow the information at the above link for installation instructions on
 
 ## Clone the [AppAuth for Android client SDK](https://github.com/openid/AppAuth-Android) Repository
 
-    git clones https://github.com/openid/AppAuth-Android.git
+    git clone https://github.com/openid/AppAuth-Android.git
 
-## Clone the client Repository
+## Clone the test client Repository
 
     git clone https://github.com/dtisza1/bluebutton-sample-client-android
-    cd bluebutton-sample-client-android
 
+## Setup using [Android Studio](https://developer.android.com/studio/)
 
-## Setup with in [Android Studio](https://developer.android.com/studio/)
-
-1. Import the project via File -> New -> Import project -> Choose: bluebutton-sample-client-android
-2. Click OK to use gradle wrapper
-3. Import SDK module via File -> New -> ImportModule -> Choose: AppAuth-Android 
-   Select the "library" location for import
-4. Edit the settings.gradle file. Add :library for the line to become:
-   "include ':app', ':library'"
-5. Sync the gradle files via File -> Sync project with gradle files
-6. Build the project and library via Build -> Make Project
-7. Run the client app via Run-> Run 'app'
+1. Import the project via File -> New -> Import project -> Choose: bluebutton-sample-client-android.
+2. Click OK to use gradle wrapper.
+3. Import the SDK module via File -> New -> ImportModule -> Choose: AppAuth-Android.
+   Select the "library" location for import.
+4. Edit the settings.gradle file. Add :library for the include line to become:
+   "include ':app', ':library'".
+5. Sync the gradle files via File -> Sync project with gradle files.
+6. Build the project and library via Build -> Make Project.
+7. Run the client app via Run-> Run 'app'.
 
     NOTE: If having an issue running in the emulator, disble the "Instant Run" option under settings->Execution. 
 
@@ -84,9 +82,9 @@ In the android app, click the "+" in the upper right to create a new configurati
     BB_TOKEN_URL: "https://sandbox.bluebutton.cms.gov/v1/o/token/"
     BB_USERINFO_URI: "https://sandbox.bluebutton.cms.gov/v1/connect/userinfo"
 
-Press the <update> button to save the configation and the <connect> to test a connection.
+Press the **update** button to save the configation and the **connect** button to test a connection.
 
-The authorization state will persist, so to try another connection you will have to click the <logout> button before trying again.
+The authorization state will persist, so to try another connection you will have to click the **logout** button before trying again.
 
 
 ## This README and demo app is still a work in progress :-)
